@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\nengk\\source\\repos\\FlappyBird\\Source\\FlappyBird\\FlappyBird.Build.cs",
+		"C:\\Users\\nengk\\source\\repos\\FlappyBird\\Source\\FlappyBird.Target.cs",
+		"C:\\Users\\nengk\\source\\repos\\FlappyBird\\Source\\FlappyBirdEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.3"
+}

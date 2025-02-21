@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FlappyBird",
+			"Path": "..\\Source\\FlappyBird.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FlappyBirdEditor",
+			"Path": "..\\Source\\FlappyBirdEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
