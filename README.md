@@ -58,4 +58,4 @@ Unreal Engine 5.5.3
         UPROPERTY(EditAnywhere)
            UCameraComponent * Camera;
    ```  
-  
+  4. Edit PW_Bird.cpp file. Create object for MeshCamera and USpringArmComponent.
