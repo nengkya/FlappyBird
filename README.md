@@ -1,6 +1,6 @@
 Unreal Engine 5.5.3  
   
-[Tutorial](https://dev.epicgames.com/community/learning/tutorials/jyWV/unreal-engine-c-beginner-tutorial-flappy-bird) 7:00  
+[Tutorial](https://dev.epicgames.com/community/learning/tutorials/jyWV/unreal-engine-c-beginner-tutorial-flappy-bird) 7:20  
   
 1. Create blank project  
   
@@ -13,6 +13,7 @@ Unreal Engine 5.5.3
    using a node-based interface without writing traditional code, essentially acting as a visual programming language to design game mechanics within the Unreal Editor itself.  
    To make Blueprint visible use UProperty(EditAnywhere).  
    ```  
+   #include "Camera/CameraComponent.h"
    private:
    /*
    Unreal Engine Property Specifiers
@@ -40,16 +41,18 @@ Unreal Engine 5.5.3
            */
            UStaticMeshComponent * Mesh;
   
-           UPROPERTY(VisibleAnywhere)
-            /*
-            UStringArmComponent tries to maintain its children at a fixed distance from the parent,
-            but will retract the children if there is a collision, and spring back when there is no collision.
-            Example: Use as a 'camera boom' or 'selfie stick' to keep the follow camera for a player from colliding into the world.
+       UPROPERTY(VisibleAnywhere)
+           /*
+           UStringArmComponent tries to maintain its children at a fixed distance from the parent,
+           but will retract the children if there is a collision, and spring back when there is no collision.
+           Example: Use as a 'camera boom' or 'selfie stick' to keep the follow camera for a player from colliding into the world.
         
-            A "camera boom" refers to a virtual component, typically a "SpringArmComponent," which acts like a flexible arm extending from a character or object,
-            allowing the camera to smoothly follow and maintain a desired distance while avoiding collisions with the environment,
-            essentially simulating how a real camera boom would operate in filmmaking.
-            */
-            UStringArmComponent * CameraBoom;
+           A "camera boom" refers to a virtual component, typically a "SpringArmComponent," which acts like a flexible arm extending from a character or object,
+           allowing the camera to smoothly follow and maintain a desired distance while avoiding collisions with the environment,
+           essentially simulating how a real camera boom would operate in filmmaking.
+           */
+           UStringArmComponent * CameraBoom;
+        UPROPERTY(EditAnywhere)
+           UCameraComponent * Camera;
    ```  
   
