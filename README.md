@@ -18,7 +18,6 @@ Unreal Engine 5.5.3
    /*#include "Components/StaticMeshComponent.h"*/
   
    
-   private:
    /*
    Unreal Engine Property Specifiers
    UPROPERTY([specifier, specifier, ...], [meta(key=value, key=value, ...)])
